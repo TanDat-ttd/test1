@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <title>Art-Group14.com</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+    <!-- Additional JavaScript Files -->
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
+    <script defer src="./assets/js/group-diary.js"></script>
+
+    <!--
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+</head>
+
+<body class="">
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="header">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png">
+                        </a>
+                        <div class="btn-active">
+                            <button class="btn-login" id="login">Login</button>
+                            <button class="btn-signUp" id="signUp">SignUp</button>
+                        </div>
+                    </div>
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <!-- <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png">
+                        </a> -->
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <!-- <div id="btn-active">
+                            <div class="btn-Login">
+                                <button> Log in</button>
+                            </div>
+                            <div class="btn-Signup">
+                                <button> Sign up</button>
+                            </div>
+                        </div> -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#men">About</a></li>
+                            <li class="scroll-to-section"><a href="#week5">Work</a></li>
+                            <li class="scroll-to-section"><a href="#explore">Explore</a></li>
+                            <li class="scroll-to-section"><a href="blog.html">Blog</a></li>
+                            <li class="scroll-to-section"><a href="contact.html">Contact</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Pages</a>
+                                <ul>
+                                    <li><a href="moreExplore.html">More Explore</a></li>
+
+                                </ul>
+                            </li>
+                            <li><button id="switch-mode"><i class="bi bi-moon-stars-fill"></i></button></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <div style="display: block; margin-top: -10px;" class="inner-content">
+                                <h4>The Starry Night 1889</h4>
+                                <span>Vincent van Gogh</span>
+                                <div class="main-border-button">
+                                    <a href="#">Read more</a>
+                                </div>
+
+                            </div>
+                            <img style="height: 725.6px;" src="assets/images/theStaryNight.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Mona Lisa</h4>
+                                            <span>Leonardo da Vinci</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Mona Lisa</h4>
+                                                <p>The Mona Lisa is a classic work of art by the Italian Renaissance
+                                                    painter Leonardo da Vinci, painted in oil on a poplar wood panel in
+                                                    Florence during the Italian Renaissance. It is a portrait of Lisa
+                                                    del Giocondo, the wife of a wealthy Italian merchant named Francesco
+                                                    del Giocondo, and is therefore also known as "La Gioconda" or "The
+                                                    Mona Lisa"... </p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img style="height: 340px;" src="assets/images/Mona Lisa.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>The Elephant Celebes</h4>
+                                            <span>Max Ernst</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>The Elephant Celebes</h4>
+                                                <p>The Elephant Celebes is a work of art by Max Ernst, a German Dada and
+                                                    Surrealist painter. It was painted in 1921 and is considered one of
+                                                    Ernst's earliest Surrealist works. The painting combines the
+                                                    dreamlike atmosphere of Surrealism with the collage aspects of
+                                                    Dada...</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img style="height: 340px;" id="img-elephant"
+                                            src="assets/images/TheElephantCelebes.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>The Blue Rider, 1903</h4>
+                                            <span>Wassily Kandinsky</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>The Blue Rider, 1903</h4>
+                                                <p>The painting is considered one of Kandinsky's most important works of
+                                                    the early 20th century. It depicts an image of a rider wearing a
+                                                    green cloak riding a horse galloping at high speed across a rocky
+                                                    field. The rider's cloak is blue, casting a dark blue shadow...</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img style="height: 340px;" src="assets/images/DerBlaueReiter.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content4">
+                                            <h4>American Gothic</h4>
+                                            <span>Grant Wood</span>
+                                        </div>
+                                        <div class="hover-content4">
+                                            <div class="inner">
+                                                <h4>American Gothic</h4>
+                                                <p>American Gothic is a work of art painted by American artist Grant
+                                                    Wood in 1930. It is housed at the Art Institute of Chicago. The
+                                                    painting depicts a farmer standing next to his daughter, intended as
+                                                    a depiction of rural America. However, many people have mistakenly
+                                                    thought the person standing next to the man is his wife...</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img style="height: 340px;" id="img-grant" src="assets/images/GrantWood.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Main Banner Area Start ***** -->
+
+
+    <!-- ***** About Our Team (start)***** -->
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2 style="margin-left: 450px; white-space: nowrap;">Team Members</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="men-item-carousel">
+                        <div class="owl-men-item owl-carousel">
+                            <!-- <div class="row g-5"> -->
+
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                                <div style="width: 430px;" class="team-item bg-light rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img style="height: 450px;" class="img-fluid w-100"
+                                            src="assets/images/gialy.jpg" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://www.facebook.com/ly.gia.1501/"><i
+                                                    class="fab fa-facebook-f fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href=" https://www.instagram.com/___lys.sunny___/?hl=vi"><i
+                                                    class="fab fa-instagram fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://gialyy.github.io/about.me/"><i
+                                                    class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-left: 7em;" class="text-center py-4">
+                                    <h4 style="white-space: nowrap; margin-left: 30px;" class="text-primary">Hứa Nữ Gia
+                                        Ly</h4>
+                                    <p style="font-size: 20px; margin-left: 70px">22130159</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                                <div style="width: 423px;" class="team-item bg-light rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="assets/images/thuykieu.jpg" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://www.facebook.com/profile.php?id=100025209679379&mibextid=ZbWKwL"><i
+                                                    class="fab fa-facebook-f fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="http://www.instagram.com/tkieu1301"><i
+                                                    class="fab fa-instagram fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://github.com/kieu2004
+                                                    "><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-left: 7em;" class="text-center py-4">
+                                    <h4 style="white-space: nowrap; margin-left: 10px;" class="text-primary">Lê Thị Thúy
+                                        Kiều</h4>
+                                    <p style="font-size: 20px; margin-left: 70px">22130137</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                                <div style="width: 425px; margin-top: -10px;"
+                                    class="team-item bg-light rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="assets/images/nhulan.jpg" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://www.facebook.com/bbyyshark.24/"><i
+                                                    class="fab fa-facebook-f fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://www.instagram.com/ecihyav/"><i
+                                                    class="fab fa-instagram fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://hoangnhulan.github.io/PersonalWebsite/about.html"><i
+                                                    class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-left: 7em;" class="text-center py-4">
+                                    <h4 style="white-space: nowrap; margin-left: 20px;" class="text-primary">Hoàng Như
+                                        Lan</h4>
+                                    <p style="font-size: 20px; margin-left: 70px">22130139</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                                <div style="width: 430px;" class="team-item bg-light rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="assets/images/tandat.jpg" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://www.facebook.com/profile.php?id=100009038752955&mibextid=ZbWKwL"><i
+                                                    class="fab fa-facebook-f fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://instagram.com/_tr.datt_?igshid=NzZlODBkYWE4Ng=="><i
+                                                    class="fab fa-instagram fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://tandat-ttd.github.io/personal_web/"><i
+                                                    class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-left: 7em;" class="text-center py-4">
+                                    <h4 style="white-space: nowrap; margin-left:20px;" class="text-primary">Trương Tấn
+                                        Đạt</h4>
+                                    <p style="font-size: 20px; margin-left: 60px">22130037</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                                <div style="width: 440px;" class="team-item bg-light rounded overflow-hidden">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="assets/images/myhanh.jpg" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href=": https://www.facebook.com/profile.php?id=100024623842401&mibextid=ZbWKwL"><i
+                                                    class="fab fa-facebook-f fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://www.instagram.com/"><i
+                                                    class="fab fa-instagram fw-normal"></i></a>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                                                href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-left: 7em;" class="text-center py-4">
+                                    <h4 style="white-space: nowrap; margin-left: 10px;" class="text-primary">Đặng Thị Mỹ
+                                        Hạnh</h4>
+                                    <p style="font-size: 20px; margin-left: 60px">22130072</p>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Our Team (end)***** -->
+
+    <!-- ***** week5-group diary Starts ***** -->
+
+    <section class="section" id="week5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Work</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="kid-item-carousel">
+                        <!-- <section id="task-list">
+                            
+                        </section>
+
+                        <section id="add-task">
+                            <h3>Add New Work</h3>
+                            <form id="task-form">
+                                <label for="Stt">Số thứ tự:</label>
+                                <input type="number" id="Stt" required>
+                                <label for="task-name">Tên công việc:</label>
+                                <input type="text" id="task-name" required>
+
+                                <label for="assignee">Người thực hiện:</label>
+                                <input type="text" id="assignee" required>
+
+                                <label for="start-date">Ngày bắt đầu:</label>
+                                <input type="date" id="start-date" required>
+
+                                <label for="end-date">Ngày kết thúc:</label>
+                                <input type="date" id="end-date" required>
+
+                                <button type="button" onclick="addTask()">Add Work</button>
+                                <button type="button" onclick="resetDiary()">Reset Group Diary</button>
+                            </form>
+                        </section> -->
+                        <section id="week_5">
+                            <h2>Phân công công việc</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên công việc</th>
+                                        <th>Người thực hiện</th>
+                                        <th>MSSV</th>
+                                        <th>Kết quả</th>
+                                        <th>Tiến độ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Tạo chức năng chế độ sáng tối "moon-light"</td>
+                                        <td>Hứa Nữ Gia Ly</td>
+                                        <td>22130159</td>
+                                        <td>Hoàn thành</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tạo chức năng feedback, trang Contact</td>
+                                        <td>Hoàng Như Lan</td>
+                                        <td>22130139</td>
+                                        <td>Hoàn thành</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Tạo chức năng Readmore</td>
+                                        <td>Lê Thị Thúy Kiều</td>
+                                        <td>22130137</td>
+                                        <td>Hoàn thành</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Tạo chức năng Login/Signout</td>
+                                        <td>Trương Tấn Đạt</td>
+                                        <td>22130037</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td></td>
+                                        <td>Đặng Thị Mỹ Hạnh</td>
+                                        <td>22130072</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** week5-group diary Ends ***** -->
+
+    <!-- ***** Explore (Start) ***** -->
+    <section id="explore">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="display-5 mb-5"><b>Artistic Paintings</b></h2>
+                <p>Unique Art Collection - Endless Source of Inspiration</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc1.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Mona Lisa</h4>
+                            <p>Mona Lisa is a 16th-century portrait painted with oil on a poplar wood panel in Florence
+                                by Leonardo da Vinci during the Italian Renaissance.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc1">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc2.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Napoleon</h4>
+                            <p>The oil painting portrait of Napoleon Bonaparte painted by the French artist
+                                Jacques-Louis David in 1805.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc2">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc3.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">American Gothic</h4>
+                            <p>"American Gothic" is a painting created by Grant Wood and is part of the collection of
+                                the Art Institute of Chicago.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc3">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc4.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Glow of Hope</h4>
+                            <p> alternately titled "Woman With the Lamp", is a painting by S.L. Haldankar.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc4">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc5.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Portrait of Mari Clasen</h4>
+                            <p>Portrait of Mari Clasen is an 1895 painting from Norwegian artist Halfdan Johnsen
+                                Egedius.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc5">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc6.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Lady with Ermine</h4>
+                            <p>The Lady with an Ermine is a portrait painting widely attributed to the Italian
+                                Renaissance artist Leonardo da Vinci.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc6">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc7.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Las Meninas</h4>
+                            <p>Las Meninas is a 1656 painting in the Museo del Prado in Madrid, by Diego Velázquez, the
+                                leading artist of the Spanish Baroque.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc7">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc8.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">The Scream</h4>
+                            <p>"The Scream" is the title of one of four versions of a composition, both painted and
+                                printed, by the expressionist Norwegian painter Edvard Munch</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc8">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc9.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">The Kiss</h4>
+                            <p>The Kiss is an oil-on-canvas painting with added gold leaf, silver and platinum by the
+                                Austrian Symbolist painter Gustav Klimt.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc9">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc10.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3"> The Starry Night </h4>
+                            <p>"Starry Night" is a painting by the post-impressionist Dutch artist Vincent van Gogh.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc10">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc11.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">The Persistence of Memory</h4>
+                            <p>The Persistence of Memory is a 1931 painting by artist Salvador Dalí and one of the most
+                                recognizable works of Surrealism. </p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc11">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="assets/images/pc12.PNG" alt="">
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3"> The Last Supper</h4>
+                            <p>"The Last Supper" is a famous mural painting by the artist Leonardo da Vinci. The
+                                description of the dormitory of Santa Maria Abbey in the city of Milan.</p>
+                            <a class="fw-medium" href="moreExplore.html#content_pc12">Read More<i
+                                    class="fa fa-arrow-right ms-2" style="margin-left: 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_more">
+                <a href="moreExplore.html">See all artwork »</a>
+            </div>
+        </div>
+    </section>
+    <!-- </div> -->
+    <!-- ***** Explore (end) ***** -->
+
+    <!-- ***** More Explore (start) ***** -->
+    <section class="section" id="more_explore">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Distinctive High-Class Art Collection</h2>
+                        <span>Explore a myriad of beautiful and diverse art pieces on our website, where you can
+                            indulge in creativity and sophistication within the world of artistic paintings.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row images">
+                <div class="col-2">
+                    <div class="thumb">
+                        <img src="assets/images/movement1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Impressionism (1874 - 1886)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <img src="assets/images/movement2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Post Impressionism (1886 - 1910)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <img src="assets/images/movement3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Fauvism (1905 - 1909)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <img src="assets/images/movement4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Neoclassicism (TK18-19)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <img src="assets/images/movement5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Constructivism (1915)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <img src="assets/images/movement6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text"> Ba-rốc- Baroque (TK17-18)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** More Explore (ends) ***** -->
+    <!-- ***** Experience (started) ***** -->
+    <!-- loat  -->
+    <style>
+        .experience img {
+            width: 1900px;
+            /* Điều chỉnh kích thước theo nhu cầu */
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        /* Hiệu ứng nổi lên khi được nhấp */
+        .experience img:hover {
+            transform: scale(1.1);
+            /* Tăng kích thước 110% */
+        }
+
+        /* Lớp hiệu ứng khi hình được nhấp */
+        .experience img.clicked {
+            transform: scale(1.5);
+            /* Tăng kích thước 150% */
+        }
+    </style>
+    <div class="experience">
+
+        <img style="width: 100%;" src="assets/images/trainghiem.jpg" alt="trainghiem" onclick="toggleImage()">
+
+    </div>
+    <script>
+        function toggleImage() {
+            var image = document.querySelector('.experience img');
+
+            // Thêm hoặc xóa lớp 'clicked' để kích hoạt hoặc hủy hiệu ứng nổi lên
+            image.classList.toggle('clicked');
+        }
+    </script>
+    <script>
+        function toggleImage() {
+            var image = document.querySelector('.experience img');
+
+            // Thêm hoặc xóa lớp 'clicked' để kích hoạt hoặc hủy hiệu ứng nổi lên
+            image.classList.toggle('clicked');
+        }
+    </script>
+    <!-- ***** Experience (end) ***** -->
+    <!-- ***** Subscribe Area Starts ***** -->
+    <section class="section" id="contact">
+        <!-- <div class="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="section-heading">
+                            <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+                            <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        </div>
+                        <form id="subscribe" action="" method="get">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <fieldset>
+                                        <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-5">
+                                    <fieldset>
+                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                            placeholder="Your Email Address" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-2">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-dark-button"><i
+                                                class="fa fa-paper-plane"></i></button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul>
+                                    <li>Store Location:<br><span>Sunny Isles Beach, FL 33160, United States</span>
+                                    </li>
+                                    <li>Phone:<br><span>010-020-0340</span></li>
+                                    <li>Office Location:<br><span>North Miami Beach</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
+                                    <li>Email:<br><span>info@company.com</span></li>
+                                    <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>,
+                                            <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- ***** Subscribe Area Ends ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item" style="margin-top: -85px;">
+                        <div class="logo">
+                            <img style="width: 200px; height: 70px;" src="assets/images/logo.png"
+                                alt="hexashop ecommerce templatemo">
+                        </div>
+                        <ul>
+                            <li><a href="#">Trường Đại học Nông Lâm </a></li>
+                            <li><a href="#">art_group14@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Artistic &amp; Paintings</h4>
+                    <ul>
+                        <li><a href="#">The Starry Night 1889</a></li>
+                        <li><a href="#">Mona Lisa</a></li>
+                        <li><a href="#">The Elephant Celebes</a></li>
+                        <li><a href="#">The Blue Rider, 1903</a></li>
+                        <li><a href="#">American Gothic</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#top">Homepage</a></li>
+                        <li><a href="#men">About</a></li>
+                        <li><a href="#week5">Work</a></li>
+                        <li><a href="#explore"></a></li>
+                        <li><a href="moreExplore.html">Pages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Group 14 © 2024 Painting Art, Ltd. All Rights Reserved.
+
+                            <br>Design: <a href="#" target="_parent" title="free css templates">Group 14</a>
+                        </p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+        function toggleHeart(heartButton) {
+            heartButton.classList.toggle('heart-selected');
+        }
+
+    </script>
+
+    <!-- Switch-mode -->
+    <script>
+
+        const body = document.body;
+        const switch_mode = document.querySelector('#switch-mode i');
+        // Load mode
+        let mode = localStorage.getItem('darkmode');
+        console.log(mode);
+        if (mode == 'true') {
+            body.classList.add('dark');
+            switch_mode.className = "bi bi-brightness-low-fill";
+        }
+        switch_mode.addEventListener('click', () => {
+            // alert('Clicked!');
+
+            switch_mode.classList.toggle('bi-moon-stars-fill');
+            switch_mode.classList.toggle('bi-brightness-low-fill');
+            let mode = body.classList.toggle('dark');
+
+            //save mode
+            localStorage.setItem('darkmode', mode);
+        });
+
+    </script>
+
+    <script>
+        // Lấy button bằng cách sử dụng id
+        var button = document.getElementById("login");
+        var button1 = document.getElementById("signUp");
+        // Gán sự kiện click cho button
+        button.addEventListener("click", function () {
+            // Chuyển hướng đến đường link mới khi button được click
+            window.location.href = "login.html";
+        });
+        button1.addEventListener("click", function () {
+            // Chuyển hướng đến đường link mới khi button được click
+            window.location.href = "login.html";
+        });
+    </script>
+
+</body>
+
+</html>

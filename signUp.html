@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login/login.css">
+    <title>Đăng Kí</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-in">
+            <form onsubmit="signUp()">
+                <h2>Đăng Kí</h2>
+                <div>
+                    <div>
+                        <input id="email" type="Email" placeholder="Email">
+                        <input id="username" type="Name" placeholder="Name">
+                        <input id="password" type="password" placeholder="password">
+                        <input id="password-confirm" type="password" placeholder="Confirm password">
+                        <button onclick="checkform()">Đăng Kí</button>
+                    </div>
+                </div>
+                <p>-------Hoặc------</p>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <img src="google-icon.png" alt="Google">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="facebook-icon.png" alt="Facebook">
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>Chào Mừng Đến Project Nhóm 14</h1>
+                    <p>Bạn đã có tài khoản?</p>
+                    <button class="hidden" id="login">Đăng Nhập</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Login/login_signUp.js"></script>
+    <script>
+        var button = document.getElementById("login");
+        button.addEventListener("click", function () {
+
+            window.location.href = "login.html";
+        });
+        
+    </script>
+</body>
+
+</html>

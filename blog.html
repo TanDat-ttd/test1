@@ -1,0 +1,2815 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js enable-scroll">
+
+<head>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <title>Art-Group 14.com</title>
+  <!-- <link rel="stylesheet" href="./assets/css/templatemo-hexashop.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
+  <script defer="" src="./assets/js/group-diary.js"></script>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wix.com Website Builder">
+
+  <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+  <link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+
+
+  <!-- Legacy Polyfills -->
+  <script nomodule="" src="https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js"></script>
+  <script nomodule=""
+    src="https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js"></script>
+  <script nomodule="" src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
+
+
+
+  <!-- initCustomElements -->
+  <meta name="wix-dynamic-custom-elements" content="">
+
+
+  <style data-url="https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.df786773.min.css">
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    b,
+    big,
+    blockquote,
+    button,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    fieldset,
+    font,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    nav,
+    object,
+    ol,
+    p,
+    pre,
+    q,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    title,
+    tr,
+    tt,
+    u,
+    ul,
+    var {
+      background: transparent;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      padding: 0;
+      vertical-align: baseline
+    }
+
+
+    [data-mesh-id$=centeredContent],
+    [data-mesh-id$=form],
+    [data-mesh-id$=inlineContent] {
+      pointer-events: none;
+      position: relative
+    }
+
+    [data-mesh-id$=-gridWrapper],
+    [data-mesh-id$=-rotated-wrapper] {
+      pointer-events: none
+    }
+
+    [data-mesh-id$=-gridContainer]>*,
+    [data-mesh-id$=-rotated-wrapper]>*,
+    [data-mesh-id$=inlineContent]>:not([data-mesh-id$=-gridContainer]) {
+      pointer-events: auto
+    }
+  </style>
+
+  <style>
+    #header {
+      width: 100%;
+      height: 60px;
+      display: flex;
+    }
+
+    .btn-active {
+      display: flex;
+      align-items: center;
+      margin-left: 750px;
+      margin-top: 10px;
+    }
+
+    .btn-login {
+      padding: 8px 16px;
+      color: #333;
+      cursor: pointer;
+      border: 1px solid #6e6f70;
+      border-radius: 25px;
+      background-color: #fff;
+    }
+
+    .btn-signUp {
+      margin-left: 20px;
+      padding: 8px 16px;
+      border: none;
+      border: 1px solid #000;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 25px;
+    }
+
+    .btn-login:hover,
+    .btn-signUp:hover {
+      background-color: #2980b9;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .background-header {
+      border-bottom: none !important;
+      background-color: #fff;
+      height: 80px !important;
+      position: fixed !important;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    /* logo cua trang web */
+    .logo img {
+      display: block;
+      margin-top: 0px;
+      width: 230px;
+      height: 100px;
+
+    }
+
+    /* chữ bên cạnh logo  */
+    .title-logo {
+      display: block;
+      margin-top: -55px;
+      margin-left: -120px;
+      color: #191a20;
+    }
+
+    h3.title-logo {
+      margin-left: 100px;
+    }
+
+    .background-header .main-nav .nav li:hover a {
+      color: #2a2a2a !important;
+    }
+
+    .background-header .nav li a.active {
+      color: #2a2a2a !important;
+    }
+
+    .header-area {
+      /* border-bottom: 3px dotted #eee; */
+      box-shadow: none;
+      background-color: fff;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 100;
+      height: 140px;
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s;
+    }
+
+    .header-area .main-nav {
+      min-height: 100px;
+      background: transparent;
+      float: inline-end;
+    }
+
+    .header-area .main-nav .logo {
+      margin-right: 10px;
+      line-height: 100px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      float: left;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    .background-header .main-nav .logo {
+      line-height: 75px;
+    }
+
+    .background-header .nav {
+      margin-top: 20px !important;
+    }
+
+    .header-area .main-nav .nav {
+      float: inline-start;
+      margin-top: 30px;
+      margin-right: 0px;
+      background-color: transparent;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      position: relative;
+      z-index: 999;
+    }
+
+    #btn-active {
+      padding: 0 0 0 5px;
+      display: flex;
+      float: left;
+      align-items: center;
+    }
+
+    #list {
+      display: inline-block;
+      margin-left: 200px;
+    }
+
+    .header-area .main-nav .nav li {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+    }
+
+    .header-area .main-nav .nav li:last-child {
+      padding-right: 0px;
+    }
+
+    .header-area .main-nav .nav li a {
+      display: block;
+      font-weight: 600;
+      font-size: 15px;
+      color: #2a2a2a;
+      text-transform: capitalize;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      height: 40px;
+      line-height: 40px;
+      border: transparent;
+      letter-spacing: 1px;
+    }
+
+    .header-area .main-nav .nav li a {
+      color: #2a2a2a;
+      text-decoration: none;
+    }
+
+    .header-area .main-nav .nav li:hover a,
+    .header-area .main-nav .nav li a.active {
+      color: #aaa !important;
+    }
+
+    .background-header .main-nav .nav li:hover a,
+    .background-header .main-nav .nav li a.active {
+      color: #aaa !important;
+      opacity: 1;
+    }
+
+    .header-area .main-nav .nav li.submenu {
+      position: relative;
+      padding-right: 30px;
+    }
+
+    .header-area .main-nav .nav li.submenu:after {
+      font-family: FontAwesome;
+      content: "\f107";
+      font-size: 12px;
+      color: #2a2a2a;
+      position: absolute;
+      right: 18px;
+      top: 12px;
+    }
+
+    .background-header .main-nav .nav li.submenu:after {
+      color: #2a2a2a;
+    }
+
+    .header-area .main-nav .nav li.submenu ul {
+      position: absolute;
+      width: 200px;
+      box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      top: 50px;
+      opacity: 0;
+      transform: translateY(+2em);
+      visibility: hidden;
+      z-index: -1;
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    }
+
+    .header-area .main-nav .nav li.submenu ul li {
+      margin-left: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .header-area .main-nav .nav li.submenu ul li a {
+      opacity: 1;
+      display: block;
+      background: #f7f7f7;
+      color: #2a2a2a !important;
+      padding-left: 20px;
+      height: 40px;
+      line-height: 40px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      position: relative;
+      font-size: 13px;
+      font-weight: 400;
+      border-bottom: 1px solid #eee;
+    }
+
+    .header-area .main-nav .nav li.submenu ul li a:hover {
+      background: #fff;
+      color: #aaa !important;
+      padding-left: 25px;
+    }
+
+    .header-area .main-nav .nav li.submenu ul li a:hover:before {
+      width: 3px;
+    }
+
+    .header-area .main-nav .nav li.submenu:hover ul {
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      transform: translateY(0%);
+      transition-delay: 0s, 0s, 0.3s;
+    }
+
+    .nav #switch-mode {
+      outline: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .nav #switch-mode i {
+      font-size: 24px;
+    }
+
+    .header-area .main-nav .menu-trigger {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 33px;
+      width: 32px;
+      height: 40px;
+      text-indent: -9999em;
+      z-index: 99;
+      right: 40px;
+      display: none;
+    }
+
+    .background-header .main-nav .menu-trigger {
+      top: 23px;
+    }
+
+    .header-area .main-nav .menu-trigger span,
+    .header-area .main-nav .menu-trigger span:before,
+    .header-area .main-nav .menu-trigger span:after {
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      background-color: #1e1e1e;
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      left: 0;
+    }
+
+    .background-header .main-nav .menu-trigger span,
+    .background-header .main-nav .menu-trigger span:before,
+    .background-header .main-nav .menu-trigger span:after {
+      background-color: #1e1e1e;
+    }
+
+    .header-area .main-nav .menu-trigger span:before,
+    .header-area .main-nav .menu-trigger span:after {
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      background-color: #1e1e1e;
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      left: 0;
+      width: 75%;
+    }
+
+    .background-header .main-nav .menu-trigger span:before,
+    .background-header .main-nav .menu-trigger span:after {
+      background-color: #1e1e1e;
+    }
+
+    .header-area .main-nav .menu-trigger span:before,
+    .header-area .main-nav .menu-trigger span:after {
+      content: "";
+    }
+
+    .header-area .main-nav .menu-trigger span {
+      top: 16px;
+    }
+
+    .header-area .main-nav .menu-trigger span:before {
+      -moz-transform-origin: 33% 100%;
+      -ms-transform-origin: 33% 100%;
+      -webkit-transform-origin: 33% 100%;
+      transform-origin: 33% 100%;
+      top: -10px;
+      z-index: 10;
+    }
+
+    .header-area .main-nav .menu-trigger span:after {
+      -moz-transform-origin: 33% 0;
+      -ms-transform-origin: 33% 0;
+      -webkit-transform-origin: 33% 0;
+      transform-origin: 33% 0;
+      top: 10px;
+    }
+
+    .header-area .main-nav .menu-trigger.active span,
+    .header-area .main-nav .menu-trigger.active span:before,
+    .header-area .main-nav .menu-trigger.active span:after {
+      background-color: transparent;
+      width: 100%;
+    }
+
+    .header-area .main-nav .menu-trigger.active span:before {
+      -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
+      -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
+      -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
+      transform: translateY(6px) translateX(1px) rotate(45deg);
+      background-color: #1e1e1e;
+    }
+
+    .background-header .main-nav .menu-trigger.active span:before {
+      background-color: #1e1e1e;
+    }
+
+    .header-area .main-nav .menu-trigger.active span:after {
+      -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+      -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+      -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+      transform: translateY(-6px) translateX(1px) rotate(-45deg);
+      background-color: #1e1e1e;
+    }
+
+    .background-header .main-nav .menu-trigger.active span:after {
+      background-color: #1e1e1e;
+    }
+
+    .header-area.header-sticky {
+      min-height: 110px;
+      background-color: #f5f5f5;
+    }
+
+    .header-area .nav {
+      margin-top: 30px;
+    }
+
+    .header-area.header-sticky .nav li a.active {
+      color: #aaa;
+    }
+
+    @media (max-width: 1200px) {
+      .header-area .main-nav .nav li {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .header-area .main-nav:before {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header-area .main-nav .logo {
+        color: #1e1e1e;
+      }
+
+      .header-area.header-sticky .nav li a:hover,
+      .header-area.header-sticky .nav li a.active {
+        color: #aaa !important;
+        opacity: 1;
+      }
+
+      .header-area.header-sticky .nav li.search-icon a {
+        width: 100%;
+      }
+
+      .header-area {
+        background-color: #f7f7f7;
+        padding: 0px 15px;
+        height: 100px;
+        box-shadow: none;
+        text-align: center;
+      }
+
+      .header-area .container {
+        padding: 0px;
+      }
+
+      .header-area .logo {
+        margin-left: 30px;
+      }
+
+      .header-area .menu-trigger {
+        display: block !important;
+      }
+
+      .header-area .main-nav {
+        overflow: hidden;
+      }
+
+      .header-area .main-nav .nav {
+        float: none;
+        width: 100%;
+        display: none;
+        -webkit-transition: all 0s ease 0s;
+        -moz-transition: all 0s ease 0s;
+        -o-transition: all 0s ease 0s;
+        transition: all 0s ease 0s;
+        margin-left: 0px;
+      }
+
+      .header-area .main-nav .nav li:first-child {
+        border-top: 1px solid #eee;
+      }
+
+      .header-area.header-sticky .nav {
+        margin-top: 100px !important;
+      }
+
+      .header-area .main-nav .nav li {
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+
+      .header-area .main-nav .nav li a {
+        height: 50px !important;
+        line-height: 50px !important;
+        padding: 0px !important;
+        border: none !important;
+        background: #f7f7f7 !important;
+        color: #191a20 !important;
+      }
+
+      .header-area .main-nav .nav li a:hover {
+        background: #eee !important;
+        color: #aaa !important;
+      }
+
+      .header-area .main-nav .nav li.submenu ul {
+        position: relative;
+        visibility: inherit;
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0%);
+        transition-delay: 0s, 0s, 0.3s;
+        top: 0px;
+        width: 100%;
+        box-shadow: none;
+        height: 0px;
+      }
+
+      .header-area .main-nav .nav li.submenu ul li a {
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+      .header-area .main-nav .nav li.submenu ul li a:hover:before {
+        width: 0px;
+      }
+
+      .header-area .main-nav .nav li.submenu ul.active {
+        height: auto !important;
+      }
+
+      .header-area .main-nav .nav li.submenu:after {
+        color: #3B566E;
+        right: 25px;
+        font-size: 14px;
+        top: 15px;
+      }
+
+      .header-area .main-nav .nav li.submenu:hover ul,
+      .header-area .main-nav .nav li.submenu:focus ul {
+        height: 0px;
+      }
+    }
+
+    @media (min-width: 767px) {
+      .header-area .main-nav .nav {
+        display: flex !important;
+      }
+    }
+  </style>
+
+  <!-- render-head end -->
+
+  <style
+    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt_bootstrap.50b4e546.min.css">
+
+  </style>
+
+  <style
+    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[SkipToContentButton].39deac6a.min.css">
+    .LHrbPP:focus {
+      border: 2px solid;
+      height: 40px;
+      opacity: 1;
+      pointer-events: auto;
+      width: auto
+    }
+  </style>
+  <style
+    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[ClassicSection].78038a64.min.css">
+    .Oqnisf {
+      overflow: visible
+    }
+
+    .cM88eO {
+      backface-visibility: hidden
+    }
+
+
+
+    .Z_wCwr,
+    .bX9O_S {
+      position: absolute;
+      top: 0
+    }
+
+    .Jxk_UL img,
+    .Z_wCwr,
+    .bX9O_S {
+      height: 100%;
+      width: 100%
+    }
+
+
+
+
+    .nTiihL {
+      background-color: var(--container-corvid-background-color, rgba(var(--bg, var(--color_11)), var(--alpha-bg, 1)));
+      border: var(--container-corvid-border-width, var(--brw, 1px)) solid var(--container-corvid-border-color, rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1)));
+      border-radius: var(--rd, 5px);
+      bottom: 0;
+      box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+  </style>
+  <style data-href="https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.bae0ce0c.chunk.min.css">
+    .TWFxr5 {
+      height: auto !important
+    }
+
+    .May50y {
+      overflow: hidden !important
+    }
+  </style>
+
+  </style>
+  <style>
+    .ejoy-sub-active {
+      color: #1296ba !important;
+    }
+
+    .ejoy-sub-hovered {
+      color: #1296ba !important;
+    }
+
+    .ejoy-sub-clzz {
+      cursor: pointer;
+
+      lineHeight: 1.2;
+      font-size: 28px;
+      color: #FFCC00;
+      background: rgba(17, 17, 17, 0.7);
+
+    }
+
+    .ejoy-sub-clzz:hover {
+      color: #1296ba !important;
+    }
+
+    .ej-trans-sub {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999999;
+      cursor: move;
+    }
+
+    .ej-trans-sub>span {
+      color: #3CF9ED;
+      font-size: 18px;
+      text-align: center;
+      padding: 0 16px;
+      line-height: 1.5;
+      background: rgba(32, 26, 25, 0.8);
+      text-shadow: 0px 1px 4px black;
+      padding: 0 8px;
+
+      lineHeight: 1.2;
+      font-size: 16px;
+      color: #0CB1C7;
+      background: rgba(67, 65, 65, 0.7);
+
+    }
+
+    .ej-full-screen-video {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 30px;
+      right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999999;
+      cursor: pointer;
+    }
+
+    .ej-main-sub {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999999;
+      cursor: move;
+      padding: 0 8px;
+    }
+
+    .ej-main-sub>span {
+      color: white;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: center;
+      background: rgba(32, 26, 25, 0.8);
+      padding: 2px 8px;
+
+      lineHeight: 1.2;
+      font-size: 28px;
+      color: #FFCC00;
+      background: rgba(17, 17, 17, 0.7);
+
+    }
+
+    .ej-main-sub .ejoy-sub-clzz {
+      background: transparent !important
+    }
+
+    .tran-subtitle>span {
+      cursor: pointer;
+      padding-left: 10px;
+      top: 2px;
+      position: relative;
+    }
+
+    .tran-subtitle>span>span {
+      position: absolute;
+      top: -170%;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 13px;
+      line-height: 20px;
+      padding: 2px 8px;
+      color: white;
+      display: none;
+      border-radius: 4px;
+      white-space: nowrap;
+      left: -50%;
+      font-weight: normal;
+    }
+
+    .viewPopupPro {
+      z-index: 2147483647;
+      cursor: auto;
+      position: absolute;
+      z-index: 2147483647;
+      background: #111111;
+      transition: opacity 1s;
+      width: 172px;
+      height: 66px;
+      opacity: 1;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .titlePopupPro {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: #E5E5E5;
+      text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    .viewGoPro {
+      background: #FFCC00;
+      border-radius: 72.6257px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+      padding-left: 10px;
+      cursor: pointer;
+
+    }
+
+    .viewGoPro svg {
+      pointer-events: none;
+    }
+
+    .textGoPro {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+      pointer-events: none;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 4px 14px 4px 4px;
+    }
+
+    .viewPopupPro {
+      top: auto !important;
+      bottom: 15px !important;
+    }
+
+    .view-icon-copy-main-sub:hover>span,
+    .view-icon-edit-sub:hover>span,
+    .view-icon-exit-full-sub:hover>span,
+    .view-icon-full-sub:hover>span,
+    .iconCrownGoPro:hover>span,
+    .view-icon-copy-tran-sub:hover>span {
+      display: block;
+    }
+
+    .iconCrownGoPro {
+      padding-left: 0px !important;
+      padding-right: 8px !important;
+    }
+
+    .iconCrownGoPro svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .view-icon-full-sub,
+    .view-icon-exit-full-sub {
+      display: flex;
+    }
+
+    .view-icon-full-sub>svg,
+    .view-icon-exit-full-sub>svg {
+      pointer-events: none;
+    }
+
+    .tran-subtitle>span>svg {
+      width: 16px;
+      height: 16px;
+      pointer-events: none;
+      display: inline-flex !important;
+      vertical-align: baseline !important;
+    }
+
+    .view-icon-copy-main-sub>svg {
+      pointer-events: none;
+      color: #FFCC00
+    }
+
+    .iconCrownGoPro {
+      padding-left: 0 !important;
+      padding-right: 8px !important;
+    }
+
+    .view-icon-copy-tran-sub>svg {
+      pointer-events: none;
+      color: #0CB1C7
+    }
+  </style>
+</head>
+
+
+
+<body class="" data-new-gr-c-s-check-loaded="14.1146.0" data-gr-ext-installed="">
+  <!-- ***** Preloader Start ***** -->
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="header">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png">
+            </a>
+            <div class="btn-active">
+              <button class="btn-login">Login</button>
+              <button class="btn-signUp">SignUp</button>
+            </div>
+          </div>
+          <nav class="main-nav">
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html#top">Home</a></li>
+              <li class="scroll-to-section"><a href="index.html#men">About</a></li>
+              <li class="scroll-to-section"><a href="index.html#week5">Work</a></li>
+              <li class="scroll-to-section"><a href="index.html#explore">Explore</a></li>
+              <li class="scroll-to-section"><a href="blog.html" class="active">Blog</a></li>
+              <li class="scroll-to-section"><a href="contact.html">Contact</a></li>
+              <li class="submenu">
+                <a href="javascript:;">Pages</a>
+                <ul>
+                  <li><a href="moreExplore.html">More Explore</a></li>
+
+                </ul>
+              </li>
+              <li><button id="switch-mode"><i class="bi bi-moon-stars-fill"></i></button></li>
+            </ul>
+
+
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+  <pages-css id="pages-css">
+    <style id="css_masterPage">
+      :root,
+      :host,
+      .spxThemeOverride {
+        --color_11: 245, 245, 245;
+
+      }
+
+      .font_0 {
+        font: var(--font_0);
+        color: rgb(var(--color_45));
+        letter-spacing: 0em;
+      }
+    </style>
+    <style id="css_trxk8">
+      [data-mesh-id=comp-lqbth5avinlineContent-gridContainer] {
+        position: static;
+        display: grid;
+        height: auto;
+        width: 100%;
+        min-height: 660px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+      }
+
+      [data-mesh-id=comp-lqbth5avinlineContent-gridContainer]>[id="comp-ki74w59q"] {
+        position: relative;
+        margin: 193px 0px 10px calc((100% - 980px) * 0.5);
+        left: 206px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+      }
+
+
+
+
+      [data-mesh-id=comp-ki74w59qinlineContent-gridContainer]>[id="comp-ki74w5ap"] {
+        position: relative;
+        margin: 75px 0px 8px 0;
+        left: 6px;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+      }
+
+      [data-mesh-id=comp-ki74w59qinlineContent-gridContainer]>[id="comp-ki74yoha"] {
+        position: relative;
+        margin: 0px 0px 70px 0;
+        left: 6px;
+        grid-area: 2 / 1 / 3 / 2;
+        justify-self: start;
+        align-self: start;
+      }
+
+      #comp-ki74w5ap {
+        width: 555px;
+        height: auto;
+      }
+    </style>
+  </pages-css>
+
+  <div id="SITE_HEADER-placeholder" class="SITE_HEADER-placeholder"></div>
+  <main id="PAGES_CONTAINER" class="PAGES_CONTAINER" tabindex="-1" data-main-content="true">
+    <div id="SITE_PAGES" data-page-transition="OutIn" class="JshATs SITE_PAGES">
+      <div id="SITE_PAGES_TRANSITION_GROUP" class="fcNEqv">
+        <div id="trxk8" class="dBAkHi trxk8">
+          <div class="PFkO7r wixui-page" data-testid="page-bg"></div>
+          <div class="HT5ybB">
+            <div id="Containertrxk8" class="Containertrxk8 SPY_vo">
+              <div data-mesh-id="Containertrxk8inlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="Containertrxk8inlineContent-gridContainer" data-testid="mesh-container-content">
+                  <section id="comp-lqbth5av" tabindex="-1" class="Oqnisf comp-lqbth5av wixui-section">
+                    <div id="bgLayers_comp-lqbth5av" data-hook="bgLayers" class="MW5IWV">
+                      <div id="bgMedia_comp-lqbth5av" class="VgO9Yg"><wix-video id="videoContainer_comp-lqbth5av"
+                          data-video-info="{&quot;fittingType&quot;:&quot;fill&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;hasBgScrollEffect&quot;:&quot;&quot;,&quot;bgEffectName&quot;:&quot;&quot;,&quot;videoId&quot;:&quot;11062b_b5c8079f3b184c93b24cb8b487b62349&quot;,&quot;videoWidth&quot;:1920,&quot;videoHeight&quot;:1080,&quot;qualities&quot;:[{&quot;quality&quot;:&quot;480p&quot;,&quot;size&quot;:409920,&quot;url&quot;:&quot;video/11062b_b5c8079f3b184c93b24cb8b487b62349/480p/mp4/file.mp4&quot;},{&quot;quality&quot;:&quot;720p&quot;,&quot;size&quot;:921600,&quot;url&quot;:&quot;video/11062b_b5c8079f3b184c93b24cb8b487b62349/720p/mp4/file.mp4&quot;},{&quot;quality&quot;:&quot;1080p&quot;,&quot;size&quot;:2073600,&quot;url&quot;:&quot;video/11062b_b5c8079f3b184c93b24cb8b487b62349/1080p/mp4/file.mp4&quot;}],&quot;isVideoDataExists&quot;:&quot;1&quot;,&quot;videoFormat&quot;:&quot;mp4&quot;,&quot;playbackRate&quot;:1,&quot;autoPlay&quot;:true,&quot;containerId&quot;:&quot;comp-lqbth5av&quot;,&quot;animatePoster&quot;:&quot;none&quot;}"
+                          class="bX9O_S bgVideo yK6aSC"><video id="comp-lqbth5av_video" class="K8MSra"
+                            role="presentation" crossorigin="anonymous" playsinline="" preload="auto" muted="" loop=""
+                            tabindex="-1" autoplay=""
+                            src="https://video.wixstatic.com/video/11062b_b5c8079f3b184c93b24cb8b487b62349/1080p/mp4/file.mp4"
+                            style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;"></video><wow-image
+                            id="comp-lqbth5av_img" class="HlRz5e Z_wCwr Jxk_UL bgVideoposter yK6aSC"
+                            data-image-info="{&quot;containerId&quot;:&quot;comp-lqbth5av&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:980,&quot;targetHeight&quot;:660,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:2560,&quot;height&quot;:1440,&quot;uri&quot;:&quot;11062b_b5c8079f3b184c93b24cb8b487b62349f000.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.33,&quot;amount&quot;:1,&quot;threshold&quot;:0}},&quot;devicePixelRatio&quot;:1}}"
+                            data-bg-effect-name="" data-has-ssr-src=""
+                            data-src="https://static.wixstatic.com/media/11062b_b5c8079f3b184c93b24cb8b487b62349f000.jpg/v1/fill/w_1280,h_660,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/11062b_b5c8079f3b184c93b24cb8b487b62349f000.jpg"
+                            style="opacity: 0;"><img
+                              src="https://static.wixstatic.com/media/11062b_b5c8079f3b184c93b24cb8b487b62349f000.jpg/v1/fill/w_1280,h_660,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/11062b_b5c8079f3b184c93b24cb8b487b62349f000.jpg"
+                              alt="" style="width: 1280px; height: 660px; object-fit: cover; object-position: 50% 50%;"
+                              width="980" height="660" fetchpriority="high"></wow-image></wix-video></div>
+                    </div>
+                    <div data-mesh-id="comp-lqbth5avinlineContent" data-testid="inline-content" class=""
+                      style="color: #000;">
+                      <div data-mesh-id="comp-lqbth5avinlineContent-gridContainer" data-testid="mesh-container-content">
+                        <div id="comp-ki74w59q" class="hFQZVn comp-ki74w59q">
+                          <div class="nTiihL wixui-box" data-testid="container-bg"></div>
+                          <div data-mesh-id="comp-ki74w59qinlineContent" data-testid="inline-content" class="">
+                            <div data-mesh-id="comp-ki74w59qinlineContent-gridContainer"
+                              data-testid="mesh-container-content">
+                              <div id="comp-ki74w5ap" class="KcpHeO tz5f0K comp-ki74w5ap wixui-rich-text"
+                                data-testid="richTextElement">
+                                <h1 class="font_0 wixui-rich-text__text"
+                                  style="line-height:normal; text-align:center; font-size:51px;"><span
+                                    style="letter-spacing:0em;" class="wixui-rich-text__text">BLOG</span></h1>
+                              </div>
+                              <div id="comp-ki74yoha" class="KcpHeO tz5f0K comp-ki74yoha wixui-rich-text"
+                                data-testid="richTextElement">
+                                <p class="font_7 wixui-rich-text__text"
+                                  style="text-align:center; line-height:normal; font-size:16px;"><span
+                                    style="letter-spacing:0.15em;" class="wixui-rich-text__text">Artistic
+                                    Perspective</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="lastest-post pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center cate-ad mt-15">
+            <div class="ads">
+              <div id="cate-top" class="ads text-center"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12"></div>
+      </div>
+      <div class="row mt-5 mb-3 mb-md-5 align-items-center">
+        <div class="col-lg-6">
+          <h4 class="line-title">Chuyên mục</h4>
+        </div>
+        <div style="display: block; margin-left: 34em; margin-top: -60px;" class="col-lg-6">
+          <div  class="filter-row pt-15">
+            <div class="filter-ele"> <svg class="form-icon" aria-hidden="true" width="14" height="8" title="">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_dropdown"></use>
+              </svg> <select class="form-control"
+                onchange="document.location.href=this.options[this.selectedIndex].value;">
+                <option value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=all&amp;sort=newest">Tất cả
+                </option>
+                <option
+                  value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=elle-decoration-pop-up&amp;sort=newest">
+                  ELLE
+                  Decoration Pop-up</option>
+                <option
+                  value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=art-and-ads&amp;sort=newest"> Nghệ
+                  thuật</option>
+                <option value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=eco-art&amp;sort=newest">
+                  Sáng tạo</option>
+                <option
+                  value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=graphic-design&amp;sort=newest">
+                  Thiết kế
+                </option>
+                <option value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=van-hoa&amp;sort=newest">
+                  văn hoá</option>
+                <option value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=van-hoc&amp;sort=newest">
+                  Văn học</option>
+              </select></div>
+            <div class="filter-ele"> <svg class="form-icon" aria-hidden="true" width="14" height="8" title="">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_dropdown"></use>
+              </svg> <select class="form-control"
+                onchange="document.location.href=this.options[this.selectedIndex].value;">
+                <option selected="" value="http://127.0.0.1:5500/ProjectGTNM_group14?category=all&amp;sort=newest"> Mới
+                  nhất
+                </option>
+                <option value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=all&amp;sort=popular"> Phổ
+                  biến nhất</option>
+                <option value="http://127.0.0.1:5500/ProjectGTNM_group14/blog.html?category=all&amp;sort=alphabet"> A-Z
+                </option>
+              </select></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547851"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/graphic-design/pantone-su-ket-noi-cua-con-nguoi-547851.html"
+            title="PANTONE 13-1023 Peach Fuzz - Màu sắc tượng trưng cho lòng nhân ái và sự kết nối của con người"> <img
+              class="w-100 lazyloaded"
+              src="https://img.idesign.vn/w800/2023/12/idesign-pantone-13-1023-peach-fuzz-thumb.png"
+              alt="PANTONE 13-1023 Peach Fuzz - Màu sắc tượng trưng cho lòng nhân ái và sự kết nối của con người"
+              data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/12/idesign-pantone-13-1023-peach-fuzz-thumb.png"
+                alt="PANTONE 13-1023 Peach Fuzz &#45; Màu sắc tượng trưng cho lòng nhân ái và sự kết nối của con người"></noscript>
+          </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/eco-art/"> Sáng tạo </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/graphic-design/"> Thiết kế </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/tranngan/"
+                  class="d-flex align-items-center author"> <noscript><img src="https://img.idesign.vn/2021/08/avt.png"
+                      alt=""></noscript> <span class="item__author__name">May</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/eco-art/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Sáng tạo </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/graphic-design/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Thiết kế </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/graphic-design/pantone-13-1023-peach-fuzz-mau-sac-tuong-trung-cho-long-nhan-ai-va-su-ket-noi-cua-con-nguoi-547851.html"
+              title="PANTONE 13-1023 Peach Fuzz - Màu sắc tượng trưng cho lòng nhân ái và sự kết nối của con người"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/graphic-design/pantone-13-1023-peach-fuzz-mau-sac-tuong-trung-cho-long-nhan-ai-va-su-ket-noi-cua-con-nguoi-547851.html"
+                title="PANTONE 13-1023 Peach Fuzz - Màu sắc tượng trưng cho lòng nhân ái và sự kết nối của con người">
+              </a><a
+                href="https://idesign.vn/graphic-design/pantone-13-1023-peach-fuzz-mau-sac-tuong-trung-cho-long-nhan-ai-va-su-ket-noi-cua-con-nguoi-547851.html"
+                class="item__link"
+                title="PANTONE 13-1023 Peach Fuzz - Màu sắc tượng trưng cho lòng nhân ái và sự kết nối của con người">
+                PANTONE 13-1023 Peach Fuzz - Màu sắc tượng trưng cho lòng nhân ái và sự kết nối của con người </a></h5>
+            <div class="item__desc"> Giữa những xung đột toàn cầu và căng thẳng vô tận, PANTONE đã chính thức công bố
+              màu sắc của năm 2024 là PANTONE 13-1023 Peach Fuzz, một sắc đào…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 3 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547708"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/graphic-design/grant-wood-phan-4-547708.html" title="Grant Wood (Phần 4)"> <img
+              class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/12/231128-g-07.jpg"
+              alt="Grant Wood (Phần 4)" data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/12/231128-g-07.jpg" alt="Grant Wood (Phần 4)"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/hoi-hoa/"> Hội họa </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/graphic-design/"> Thiết kế </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/lehuongmi/"
+                  class="d-flex align-items-center author"> <noscript><img
+                      src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript> <span
+                    class="item__author__name">Hương Mi Lê</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link"> Hội họa </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Hội họa"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/graphic-design/" title="Hội họa"
+                      class="thumbcate item__link"> Thiết kế </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/graphic-design/grant-wood-phan-4-547708.html" title="Grant Wood (Phần 4)"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/graphic-design/grant-wood-phan-4-547708.html" title="Grant Wood (Phần 4)">
+              </a><a href="https://idesign.vn/graphic-design/grant-wood-phan-4-547708.html" class="item__link"
+                title="Grant Wood (Phần 4)"> Grant Wood (Phần 4) </a></h5>
+            <div class="item__desc"> Trong phần cuối của loạt bài về Grant Wood, chúng ta tiếp tục tìm hiểu các tác phẩm
+              tiêu biểu của ông, bao gồm Bữa ăn cho người đập lúa…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 15 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547720"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/graphic-design/elle-fashion-show-2023-giao-lo-thoi-trang-kien-truc-547720.html"
+            title="ELLE Fashion Show 2023: Giao lộ thời trang &amp; Kiến trúc"> <img class="w-100 lazyloaded"
+              src="https://img.idesign.vn/w800/2023/12/idesign-efs2023-thumb.png"
+              alt="ELLE Fashion Show 2023: Giao lộ thời trang &amp; Kiến trúc" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/12/idesign-efs2023-thumb.png"
+                alt="ELLE Fashion Show 2023: Giao lộ thời trang &amp; Kiến trúc"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/eco-art/"> Sáng tạo </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/graphic-design/"> Thiết kế </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/tranngan/"
+                  class="d-flex align-items-center author"> <noscript><img src="https://img.idesign.vn/2021/08/avt.png"
+                      alt=""></noscript> <span class="item__author__name">May</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/eco-art/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Sáng tạo </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/graphic-design/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Thiết kế </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> 
+         
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/graphic-design/elle-fashion-show-2023-giao-lo-thoi-trang-kien-truc-547720.html"
+              title="ELLE Fashion Show 2023: Giao lộ thời trang &amp; Kiến trúc"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/graphic-design/elle-fashion-show-2023-giao-lo-thoi-trang-kien-truc-547720.html"
+                title="ELLE Fashion Show 2023: Giao lộ thời trang &amp; Kiến trúc"> </a><a
+                href="https://idesign.vn/graphic-design/elle-fashion-show-2023-giao-lo-thoi-trang-kien-truc-547720.html"
+                class="item__link" title="ELLE Fashion Show 2023: Giao lộ thời trang &amp; Kiến trúc"> ELLE Fashion Show
+                2023: Giao lộ thời trang &amp; Kiến trúc </a></h5>
+            <div class="item__desc"> Ngày 07/12/2023 – ELLE Fashion Show 2023 chính thức công bố chủ đề GIAO LỘ THỜI
+              TRANG &amp; KIẾN TRÚC sẽ diễn ra vào ngày 20/12/2023 tại Dinh Độc Lập,…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 15 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547538"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/graphic-design/grant-wood-phan-3-547538.html" title="Grant Wood (Phần 3)"> <img
+              class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/12/231128-g-05.jpg"
+              alt="Grant Wood (Phần 3)" data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/12/231128-g-05.jpg" alt="Grant Wood (Phần 3)"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/hoi-hoa/"> Hội họa </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/graphic-design/"> Thiết kế </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/lehuongmi/"
+                  class="d-flex align-items-center author"> <noscript><img
+                      src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript> <span
+                    class="item__author__name">Hương Mi Lê</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link"> Hội họa </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Hội họa"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/graphic-design/" title="Hội họa"
+                      class="thumbcate item__link"> Thiết kế </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div>
+             <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/graphic-design/grant-wood-phan-3-547538.html" title="Grant Wood (Phần 3)"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/graphic-design/grant-wood-phan-3-547538.html" title="Grant Wood (Phần 3)">
+              </a><a href="https://idesign.vn/graphic-design/grant-wood-phan-3-547538.html" class="item__link"
+                title="Grant Wood (Phần 3)"> Grant Wood (Phần 3) </a></h5>
+            <div class="item__desc"> Trong phần 3 của loạt bài về Grant Wood, chúng ta bắt đầu tìm hiểu các tác phẩm
+              tiêu biểu của ông, bao gồm: Đèn chùm cho Phòng Ngô Iowa…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 13 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547494"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/graphic-design/grant-wood-phan-2-547494.html" title="Grant Wood (Phần 2)"> <img
+              class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/12/231128-g-03.jpg"
+              alt="Grant Wood (Phần 2)" data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/12/231128-g-03.jpg" alt="Grant Wood (Phần 2)"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/hoi-hoa/"> Hội họa </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/graphic-design/"> Thiết kế </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/lehuongmi/"
+                  class="d-flex align-items-center author"> <noscript><img
+                      src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript> <span
+                    class="item__author__name">Hương Mi Lê</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link"> Hội họa </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Hội họa"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/graphic-design/" title="Hội họa"
+                      class="thumbcate item__link"> Thiết kế </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/graphic-design/grant-wood-phan-2-547494.html" title="Grant Wood (Phần 2)"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/graphic-design/grant-wood-phan-2-547494.html" title="Grant Wood (Phần 2)">
+              </a><a href="https://idesign.vn/graphic-design/grant-wood-phan-2-547494.html" class="item__link"
+                title="Grant Wood (Phần 2)"> Grant Wood (Phần 2) </a></h5>
+            <div class="item__desc"> Trong bài thứ hai của loạt bài 4 phần về Grant Wood, chúng ta tiếp tục tìm hiểu về
+              tiểu sử của ông, cụ thể là thời kì trưởng thành,…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 17 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547455"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/minh-hoa-sach-thieu-nhi-trong-treo-cua-mark-janssen-547455.html"
+            title="Minh họa sách thiếu nhi trong trẻo của Mark Janssen"> <img class="w-100 lazyloaded"
+              src="https://img.idesign.vn/w800/2023/11/idesign-mark-janssen-thumb.png"
+              alt="Minh họa sách thiếu nhi trong trẻo của Mark Janssen" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/11/idesign-mark-janssen-thumb.png"
+                alt="Minh họa sách thiếu nhi trong trẻo của Mark Janssen"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/hoi-hoa/"> Hội họa </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/tranngan/"
+                  class="d-flex align-items-center author"> <noscript><img src="https://img.idesign.vn/2021/08/avt.png"
+                      alt=""></noscript> <span class="item__author__name">May</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link"> Hội họa </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Hội họa"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/minh-hoa-sach-thieu-nhi-trong-treo-cua-mark-janssen-547455.html"
+              title="Minh họa sách thiếu nhi trong trẻo của Mark Janssen"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/minh-hoa-sach-thieu-nhi-trong-treo-cua-mark-janssen-547455.html"
+                title="Minh họa sách thiếu nhi trong trẻo của Mark Janssen"> </a><a
+                href="https://idesign.vn/art-and-ads/minh-hoa-sach-thieu-nhi-trong-treo-cua-mark-janssen-547455.html"
+                class="item__link" title="Minh họa sách thiếu nhi trong trẻo của Mark Janssen"> Minh họa sách thiếu nhi
+                trong trẻo của Mark Janssen </a></h5>
+            <div class="item__desc"> Mark Janssen là một họa sĩ minh họa xuất thân tại học tại Học viện Nghệ thuật ở
+              Maastricht, Hà Lan. Sau khi tốt nghiệp năm 1997, ông vẽ minh…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 3 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547424"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/graphic-design/grant-wood-phan-1-547424.html" title="Grant Wood (Phần 1)"> <img
+              class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/231128-g-01.jpg"
+              alt="Grant Wood (Phần 1)" data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/11/231128-g-01.jpg" alt="Grant Wood (Phần 1)"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/graphic-design/"> Thiết kế </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/lehuongmi/"
+                  class="d-flex align-items-center author"> <noscript><img
+                      src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript> <span
+                    class="item__author__name">Hương Mi Lê</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/graphic-design/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Thiết kế </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/graphic-design/grant-wood-phan-1-547424.html" title="Grant Wood (Phần 1)"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/graphic-design/grant-wood-phan-1-547424.html" title="Grant Wood (Phần 1)">
+              </a><a href="https://idesign.vn/graphic-design/grant-wood-phan-1-547424.html" class="item__link"
+                title="Grant Wood (Phần 1)"> Grant Wood (Phần 1) </a></h5>
+            <div class="item__desc"> Vào thời kì Đại suy thoái, nước Mĩ đã tạo ra một dòng nghệ thuật đặc biệt mang tính
+              ái quốc và ca ngợi bản chất gắn liền với nông…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 15 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547390"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-3-547390.html"
+            title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 3)"> <img class="w-100 lazyloaded"
+              src="https://img.idesign.vn/w800/2023/11/231110-kvm-03.jpg"
+              alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 3)" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/11/231110-kvm-03.jpg"
+                alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 3)"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/hoi-hoa/"> Hội họa </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/lehuongmi/"
+                  class="d-flex align-items-center author"> <noscript><img
+                      src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript> <span
+                    class="item__author__name">Hương Mi Lê</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link"> Hội họa </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Hội họa"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-3-547390.html"
+              title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 3)"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-3-547390.html"
+                title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 3)"> </a><a
+                href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-3-547390.html"
+                class="item__link" title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 3)"> Chủ nghĩa Khu vực Mĩ
+                (American Regionalism) (Phần 3) </a></h5>
+            <div class="item__desc"> Trong phần cuối của loạt bài về chủ nghĩa Khu vực Mĩ, chúng ta tìm hiểu các tác
+              phẩm nghệ thuật tiêu biểu bao gồm Gothic Mĩ, Các hoạt động…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 18 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547301"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/graphic-design/nhung-tac-pham-cham-khac-trai-cay-sieu-thuc-cua-yuni-yoshida-547301.html"
+            title="Những tác phẩm chạm khắc trái cây siêu thực của Yuni Yoshida"> <img class="w-100 lazyloaded"
+              src="https://img.idesign.vn/w800/2023/11/idesign-yuni-yoshida-thumb.png"
+              alt="Những tác phẩm chạm khắc trái cây siêu thực của Yuni Yoshida" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/11/idesign-yuni-yoshida-thumb.png"
+                alt="Những tác phẩm chạm khắc trái cây siêu thực của Yuni Yoshida"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/contemporaty-art/"> Nghệ thuật đương
+                  đại </a> <span class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/eco-art/"> Sáng tạo </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/graphic-design/"> Thiết kế </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/tranngan/"
+                  class="d-flex align-items-center author"> <noscript><img src="https://img.idesign.vn/2021/08/avt.png"
+                      alt=""></noscript> <span class="item__author__name">May</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/contemporaty-art/"
+                      title="Nghệ thuật" class="thumbcate item__link"> Nghệ thuật đương đại </a> <span
+                      class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/eco-art/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Sáng tạo </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/graphic-design/nhung-tac-pham-cham-khac-trai-cay-sieu-thuc-cua-yuni-yoshida-547301.html"
+              title="Những tác phẩm chạm khắc trái cây siêu thực của Yuni Yoshida"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/graphic-design/nhung-tac-pham-cham-khac-trai-cay-sieu-thuc-cua-yuni-yoshida-547301.html"
+                title="Những tác phẩm chạm khắc trái cây siêu thực của Yuni Yoshida"> </a><a
+                href="https://idesign.vn/graphic-design/nhung-tac-pham-cham-khac-trai-cay-sieu-thuc-cua-yuni-yoshida-547301.html"
+                class="item__link" title="Những tác phẩm chạm khắc trái cây siêu thực của Yuni Yoshida"> Những tác phẩm
+                chạm khắc trái cây siêu thực của Yuni Yoshida </a></h5>
+            <div class="item__desc"> Dưới bàn tay của Yuni Yoshida, các loại trái cây quen thuộc trở thành những tác
+              phẩm nghệ thuật siêu thực và trừu tượng. Giám đốc nghệ thuật người Nhật…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 3 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547251"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+            title="Thế giới Ghibli ma mị của Julia Tveritina"> <img class="w-100 lazyloaded"
+              src="https://img.idesign.vn/w800/2023/11/idesign-julia-tveritina-thumb-2.png"
+              alt="Thế giới Ghibli ma mị của Julia Tveritina" data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/11/idesign-julia-tveritina-thumb-2.png"
+                alt="Thế giới Ghibli ma mị của Julia Tveritina"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/hoi-hoa/"> Hội họa </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/tranngan/"
+                  class="d-flex align-items-center author"> <noscript><img src="https://img.idesign.vn/2021/08/avt.png"
+                      alt=""></noscript> <span class="item__author__name">May</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link"> Hội họa </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Hội họa"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+              title="Thế giới Ghibli ma mị của Julia Tveritina"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+                title="Thế giới Ghibli ma mị của Julia Tveritina"> </a><a
+                href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+                class="item__link" title="Thế giới Ghibli ma mị của Julia Tveritina"> Thế giới Ghibli ma mị của Julia
+                Tveritina </a></h5>
+            <div class="item__desc"> Lấy cảm hứng từ những bộ phim hoạt hình nổi tiếng của Studio Ghibli như Cô bé người
+              cá Ponyo, Hàng xóm của tôi là Totoro, Lâu đài bay của…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 3 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547225"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+            title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em"> <img
+              class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/catalks-05-thumb.png"
+              alt="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em"
+              data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/11/catalks-05-thumb.png"
+                alt="ca&#8217;talks #05: Toạ đàm &#45; Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em"></noscript>
+          </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/eco-art/"> Sáng tạo </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/tranngan/"
+                  class="d-flex align-items-center author"> <noscript><img src="https://img.idesign.vn/2021/08/avt.png"
+                      alt=""></noscript> <span class="item__author__name">May</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/eco-art/" title="Nghệ thuật"
+                      class="thumbcate item__link"> Sáng tạo </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+              title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+                title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em"> </a><a
+                href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+                class="item__link" title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em">
+                ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em </a></h5>
+            <div class="item__desc"> Ngày 25/11 sắp tới đây, tại không gian của Toong, sẽ diễn ra sự kiện ca’talks #05:
+              Tọa đàm – giáo dục cảm thụ và thực hành nghệ thuật cho…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 5 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547188"> <a class="item__image"
+            ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+            title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)"> <img class="w-100 lazyloaded"
+              src="https://img.idesign.vn/w800/2023/11/231110-kvm-01-1.jpg"
+              alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/11/231110-kvm-01-1.jpg"
+                alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)"></noscript> </a>
+          <div class="item__caption">
+            <ul class="item__note d-lg-none">
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/hoi-hoa/"> Hội họa </a> <span
+                  class="mx-2">|</span></li>
+              <li> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  class="item__link" href="https://idesign.vn/category/art-and-ads/"> Nghệ thuật </a> <span
+                  class="mx-2"></span></li>
+            </ul>
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                  ga-event-action="click" href="https://idesign.vn/author/lehuongmi/"
+                  class="d-flex align-items-center author"> <noscript><img
+                      src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript> <span
+                    class="item__author__name">Hương Mi Lê</span> </a></div>
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link"> Hội họa </a> <span class="mx-1">|</span></li>
+                  <li class="d-inline-flex"> <a ga-on="click" ga-event-category="Category - Latest pick"
+                      ga-event-action="click" href="https://idesign.vn/category/art-and-ads/" title="Hội họa"
+                      class="thumbcate item__link"> Nghệ thuật </a> <span class="mx-1"></span></li>
+                </ul>
+              </div>
+            </div> <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+              title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)"></a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+                title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)"> </a><a
+                href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+                class="item__link" title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)"> Chủ nghĩa Khu vực Mĩ
+                (American Regionalism) (Phần 2) </a></h5>
+            <div class="item__desc"> Trong phần thứ hai của loạt bài về chủ nghĩa Khu vực Mĩ, chúng ta tiếp tục tìm hiểu
+              về những sự khởi đầu của trào lưu: nhà phê bình…</div>
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 16 phút đọc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547251">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+            title="Thế giới Ghibli ma mị của Julia Tveritina">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/idesign-julia-tveritina-thumb-2.png"
+              alt="Thế giới Ghibli ma mị của Julia Tveritina" data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/11/idesign-julia-tveritina-thumb-2.png"
+                alt="Thế giới Ghibli ma mị của Julia Tveritina"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/hoi-hoa/">
+                  Hội họa </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/tranngan/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/08/avt.png" alt=""></noscript>
+                  <span class="item__author__name">May</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link">
+                      Hội họa </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Hội họa" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+              title="Thế giới Ghibli ma mị của Julia Tveritina">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+                title="Thế giới Ghibli ma mị của Julia Tveritina">
+              </a><a href="https://idesign.vn/art-and-ads/the-gioi-ghibli-ma-mi-cua-julia-tveritina-547251.html"
+                class="item__link" title="Thế giới Ghibli ma mị của Julia Tveritina">
+                Thế giới Ghibli ma mị của Julia Tveritina </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              Lấy cảm hứng từ những bộ phim hoạt hình nổi tiếng của Studio Ghibli như Cô bé người cá Ponyo, Hàng xóm của
+              tôi là Totoro, Lâu đài bay của… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 3 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547225">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+            title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/catalks-05-thumb.png"
+              alt="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em"
+              data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/11/catalks-05-thumb.png"
+                alt="ca&#8217;talks #05: Toạ đàm &#45; Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/eco-art/">
+                  Sáng tạo </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/tranngan/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/08/avt.png" alt=""></noscript>
+                  <span class="item__author__name">May</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Nghệ thuật" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/eco-art/" title="Nghệ thuật" class="thumbcate item__link">
+                      Sáng tạo </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+              title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+                title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em">
+              </a><a
+                href="https://idesign.vn/art-and-ads/catalks-05-toa-dam-giao-duc-cam-thu-va-thuc-hanh-nghe-thuat-cho-tre-em-547225.html"
+                class="item__link" title="ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em">
+                ca’talks #05: Toạ đàm - Giáo dục cảm thụ và thực hành nghệ thuật cho trẻ em </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              Ngày 25/11 sắp tới đây, tại không gian của Toong, sẽ diễn ra sự kiện ca’talks #05: Tọa đàm – giáo dục cảm
+              thụ và thực hành nghệ thuật cho… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 5 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547188">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+            title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/231110-kvm-01-1.jpg"
+              alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/11/231110-kvm-01-1.jpg"
+                alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/hoi-hoa/">
+                  Hội họa </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/lehuongmi/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript>
+                  <span class="item__author__name">Hương Mi Lê</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link">
+                      Hội họa </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Hội họa" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+              title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+                title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)">
+              </a><a href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-2-547188.html"
+                class="item__link" title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2)">
+                Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 2) </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              Trong phần thứ hai của loạt bài về chủ nghĩa Khu vực Mĩ, chúng ta tiếp tục tìm hiểu về những sự khởi đầu
+              của trào lưu: nhà phê bình… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 16 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547152">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/nhung-ngoi-nha-nhuom-mau-thoi-gian-cua-hoa-sy-francisco-fonseca-547152.html"
+            title="Những ngôi nhà nhuốm màu thời gian của họa sỹ Francisco Fonseca">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/idesign-francisco-thumb.png"
+              alt="Những ngôi nhà nhuốm màu thời gian của họa sỹ Francisco Fonseca"
+              data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/11/idesign-francisco-thumb.png"
+                alt="Những ngôi nhà nhuốm màu thời gian của họa sỹ Francisco Fonseca"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/hoi-hoa/">
+                  Hội họa </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/tranngan/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/08/avt.png" alt=""></noscript>
+                  <span class="item__author__name">May</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link">
+                      Hội họa </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Hội họa" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/nhung-ngoi-nha-nhuom-mau-thoi-gian-cua-hoa-sy-francisco-fonseca-547152.html"
+              title="Những ngôi nhà nhuốm màu thời gian của họa sỹ Francisco Fonseca">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/nhung-ngoi-nha-nhuom-mau-thoi-gian-cua-hoa-sy-francisco-fonseca-547152.html"
+                title="Những ngôi nhà nhuốm màu thời gian của họa sỹ Francisco Fonseca">
+              </a><a
+                href="https://idesign.vn/art-and-ads/nhung-ngoi-nha-nhuom-mau-thoi-gian-cua-hoa-sy-francisco-fonseca-547152.html"
+                class="item__link" title="Những ngôi nhà nhuốm màu thời gian của họa sỹ Francisco Fonseca">
+                Những ngôi nhà nhuốm màu thời gian của họa sỹ Francisco Fonseca </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              Francisco Fonseca là một nghệ sĩ đường phố và họa sĩ minh họa sống ở Porto, Bồ Đào Nha. Bị mê hoặc bởi
+              những kiến trúc nhuốm màu thời gian… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 3 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547109">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/maybe-ban-nen-di-thang-11-2023-547109.html"
+            title="Maybe bạn nên … Đi! Tháng 11/2023">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/231115-mbbnd-thang11-thumb.jpg"
+              alt="Maybe bạn nên … Đi! Tháng 11/2023" data-ll-status="loaded"><noscript><img class="w-100"
+                src="https://img.idesign.vn/w800/2023/11/231115-mbbnd-thang11-thumb.jpg"
+                alt="Maybe bạn nên … Đi! Tháng 11/2023"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/contemporaty-art/">
+                  Nghệ thuật đương đại </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/tranngan/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/08/avt.png" alt=""></noscript>
+                  <span class="item__author__name">May</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Nghệ thuật" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/contemporaty-art/" title="Nghệ thuật"
+                      class="thumbcate item__link">
+                      Nghệ thuật đương đại </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/maybe-ban-nen-di-thang-11-2023-547109.html"
+              title="Maybe bạn nên … Đi! Tháng 11/2023">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/maybe-ban-nen-di-thang-11-2023-547109.html"
+                title="Maybe bạn nên … Đi! Tháng 11/2023">
+              </a><a href="https://idesign.vn/art-and-ads/maybe-ban-nen-di-thang-11-2023-547109.html" class="item__link"
+                title="Maybe bạn nên … Đi! Tháng 11/2023">
+                Maybe bạn nên … Đi! Tháng 11/2023 </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              /Maybe bạn nên … Đi/ là series giới thiệu những sự kiện nổi bật trong tuần hoặc trong tháng mà bạn không
+              nên bỏ lỡ. 1. Triển lãm “Đã từng… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 7 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="547047">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-1-547047.html"
+            title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 1)">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/11/231110-kvm-01.jpg"
+              alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 1)" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/11/231110-kvm-01.jpg"
+                alt="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 1)"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/hoi-hoa/">
+                  Hội họa </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/lehuongmi/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript>
+                  <span class="item__author__name">Hương Mi Lê</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link">
+                      Hội họa </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Hội họa" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-1-547047.html"
+              title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 1)">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-1-547047.html"
+                title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 1)">
+              </a><a href="https://idesign.vn/art-and-ads/chu-nghia-khu-vuc-mi-american-regionalism-phan-1-547047.html"
+                class="item__link" title="Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 1)">
+                Chủ nghĩa Khu vực Mĩ (American Regionalism) (Phần 1) </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              Phong trào nghệ thuật hiện đại theo chủ nghĩa hiện thực của Mĩ – chủ nghĩa Khu vực mô tả cảnh thực tế của
+              vùng nông thôn và thị trấn… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 15 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="546783">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/john-sloan-phan-1-546783.html" title="John Sloan (Phần 1)">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/10/js-01.jpg" alt="John Sloan (Phần 1)"
+              data-ll-status="loaded"><noscript><img class="w-100" src="https://img.idesign.vn/w800/2023/10/js-01.jpg"
+                alt="John Sloan (Phần 1)"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/hoi-hoa/">
+                  Hội họa </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/lehuongmi/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/01/avatar_user_185_1611294801.jpg" alt=""></noscript>
+                  <span class="item__author__name">Hương Mi Lê</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/hoi-hoa/" title="Hội họa"
+                      class="thumbcate item__link">
+                      Hội họa </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Hội họa" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/john-sloan-phan-1-546783.html" title="John Sloan (Phần 1)">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/john-sloan-phan-1-546783.html" title="John Sloan (Phần 1)">
+              </a><a href="https://idesign.vn/art-and-ads/john-sloan-phan-1-546783.html" class="item__link"
+                title="John Sloan (Phần 1)">
+                John Sloan (Phần 1) </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              John Sloan là một trong những người sáng lập trường phái Ashcan – nhóm nghệ sĩ tiên phong New York giúp
+              hình thành nên chủ nghĩa Hiện thực đặc biệt… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 16 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="post-item col-lg-4 col-sm-6 mb-3 mb-md-5" data-post-id="544152">
+          <a class="item__image" ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+            href="https://idesign.vn/art-and-ads/cach-cong-nghe-dan-thay-doi-the-gioi-nghe-thuat-phan-1-544152.html"
+            title="Cách Công nghệ dần thay đổi Thế giới Nghệ thuật (Phần 1)">
+            <img class="w-100 lazyloaded" src="https://img.idesign.vn/w800/2023/08/id-technologyandart01-thumbnail.png"
+              alt="Cách Công nghệ dần thay đổi Thế giới Nghệ thuật (Phần 1)" data-ll-status="loaded"><noscript><img
+                class="w-100" src="https://img.idesign.vn/w800/2023/08/id-technologyandart01-thumbnail.png"
+                alt="Cách Công nghệ dần thay đổi Thế giới Nghệ thuật (Phần 1)"></noscript>
+          </a>
+
+          <!--  -->
+          <div class="item__caption">
+            <!--  -->
+            <ul class="item__note d-lg-none">
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/eco-art/i-gallery/">
+                  Cảm hứng </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/">
+                  Nghệ thuật </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/art-and-ads/contemporaty-art/">
+                  Nghệ thuật đương đại </a>
+                <span class="mx-2">|</span>
+              </li>
+              <li>
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click" class="item__link"
+                  href="https://idesign.vn/category/eco-art/">
+                  Sáng tạo </a>
+                <span class="mx-2"></span>
+              </li>
+            </ul>
+
+            <!--  -->
+
+            <div class="item__copy d-none d-lg-flex flex-column align-items-center">
+              <div class="item__author mt-lg-2 mb-lg-3">
+                <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                  href="https://idesign.vn/author/artplas/" class="d-flex align-items-center author">
+                  <noscript><img src="https://img.idesign.vn/2021/11/avatar_user_195_1637205419.jpg" alt=""></noscript>
+                  <span class="item__author__name">Artplas</span>
+                </a>
+              </div>
+
+              <div class="item__type">
+                <ul class="d-flex">
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/eco-art/i-gallery/" title="Cảm hứng"
+                      class="thumbcate item__link">
+                      Cảm hứng </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/" title="Cảm hứng" class="thumbcate item__link">
+                      Nghệ thuật </a>
+                    <span class="mx-1">|</span>
+                  </li>
+                  <li class="d-inline-flex">
+                    <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                      href="https://idesign.vn/category/art-and-ads/contemporaty-art/" title="Cảm hứng"
+                      class="thumbcate item__link">
+                      Nghệ thuật đương đại </a>
+                    <span class="mx-1"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  -->
+            <a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+              href="https://idesign.vn/art-and-ads/cach-cong-nghe-dan-thay-doi-the-gioi-nghe-thuat-phan-1-544152.html"
+              title="Cách Công nghệ dần thay đổi Thế giới Nghệ thuật (Phần 1)">
+              <!-- title -->
+            </a>
+            <h5 class="item__title"><a ga-on="click" ga-event-category="Category - Latest pick" ga-event-action="click"
+                href="https://idesign.vn/art-and-ads/cach-cong-nghe-dan-thay-doi-the-gioi-nghe-thuat-phan-1-544152.html"
+                title="Cách Công nghệ dần thay đổi Thế giới Nghệ thuật (Phần 1)">
+              </a><a
+                href="https://idesign.vn/art-and-ads/cach-cong-nghe-dan-thay-doi-the-gioi-nghe-thuat-phan-1-544152.html"
+                class="item__link" title="Cách Công nghệ dần thay đổi Thế giới Nghệ thuật (Phần 1)">
+                Cách Công nghệ dần thay đổi Thế giới Nghệ thuật (Phần 1) </a>
+            </h5>
+            <!-- Mo ta ngan -->
+            <div class="item__desc">
+              “Tất cả chúng ta đều mong đợi xem việc áp dụng công nghệ hiện tại trong nghệ thuật sẽ mở ra những cánh cửa
+              nào. Dù tương lai có ra… </div>
+            <!-- phut doc -->
+            <ul class="d-flex justify-content-between item__note d-lg-none">
+              <li>Chỉ 7 phút đọc</li>
+            </ul>
+
+          </div>
+        </div>
+        <div id="btn-loadmore" class="col-12 text-center mt-4 mb-4 mt-lg-0 mb-lg-0"> <a
+            data-next-page="https://idesign.vn/art-and-ads?dp=3&amp;category=all&amp;sort=newest"
+            href="javascript:void(0)" onclick="loadmore(this);" class="main-btn btm-load-more">Đọc tiếp</a></div>
+        <script>window.post_ids = [];
+          jQuery(function () {
+            jQuery(document).find('.post-item')
+              .each(function (index, item) {
+                var id = parseInt(jQuery(item).attr('data-post-id'));
+                if (post_ids.indexOf(id) == -1) {
+                  post_ids.push(id);
+                }
+              })
+          });
+
+          function loadmore(el) {
+            console.log(el);
+            if (el.isProcessing) {
+              console.log(1);
+              return
+            };
+            el.isProcessing = true;
+            var $el = jQuery(el);
+            var next_link = el.getAttribute('data-next-page');
+            var $append_before = $el.closest('div');
+            var $append_to = $append_before.closest('div');
+
+            jQuery.ajax({
+              url: next_link,
+              type: 'get',
+              beforeSend: function () {
+                // setting a timeout
+                $('body').addClass('loading');
+              },
+              success: function (data) {
+                $('body').removeClass('loading');
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+
+                $('body').removeClass('loading');
+                $('#btn-loadmore').css({ 'display': 'none' });
+              }
+
+            }).done(function (html, status) {
+              var $dom = jQuery(html);
+              var items_to_add = $dom.find('.post-item')
+                .filter(function (index, item) {
+                  var id = parseInt(jQuery(item).attr('data-post-id'));
+                  if (post_ids.indexOf(id) == -1) {
+                    post_ids.push(id);
+                    return true;
+                  }
+                  return false;
+                })
+
+              if (items_to_add.length) {
+                items_to_add.insertBefore($append_before);
+                $el.attr('data-next-page', $dom.find('.btm-load-more').attr('data-next-page'));
+
+              } else {
+                $el.remove();
+              }
+
+              // 
+              $('body').removeClass('loading');
+
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+              // 
+              $('body').removeClass('loading');
+            });
+
+            el.isProcessing = false;
+          }</script>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center cate-ad my-4">
+            <div class="ads">
+              <div id="div-gpt-ad-1548121092676-0" data-google-query-id="CLmr-LftmoMDFXSQ6QUdXSQD5A">
+                <script>googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1548121092676-0');
+                  });</script><iframe
+                  src="https://90ac04b781bfd85359fd217f60d5ae99.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html"
+                  style="visibility: hidden; display: none;"></iframe>
+                <div id="google_ads_iframe_/21712800075/ID-archive/ID-archive-bottom_0__container__"
+                  style="border: 0pt none; width: 970px; height: 0px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+
+
+
+  <div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div><iframe id="nr-ext-rsicon"
+    style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;"></iframe>
+</body>
+
+<style>
+  /* CSS cho Dark mode */
+  body.dark {
+    background: #000;
+    color: #fff;
+  }
+
+  body.dark .header-area.header-sticky {
+    background: #3f3e3e;
+  }
+
+  body.dark .header-area.header-sticky.background-header {
+    background: #3f3e3e;
+  }
+
+  body.dark .header-area .main-nav .nav li a {
+    color: #fff;
+  }
+
+  body.dark .header-area .main-nav .nav li #switch-mode {
+    color: #fff;
+  }
+
+  body.dark .header .main-nav .nav li a {
+    color: #fff;
+  }
+
+  body.dark .header-area .background-header .main-nav .nav li #switch-mode {
+    color: #fff;
+  }
+</style>
+
+<!-- Switch-mode -->
+<script>
+
+  const body = document.body;
+  const switch_mode = document.querySelector('#switch-mode i');
+  // Load mode
+  let mode = localStorage.getItem('darkmode');
+  console.log(mode);
+  if (mode == 'true') {
+    body.classList.add('dark');
+    switch_mode.className = "bi bi-brightness-low-fill";
+  }
+  switch_mode.addEventListener('click', () => {
+    // alert('Clicked!');
+
+    switch_mode.classList.toggle('bi-moon-stars-fill');
+    switch_mode.classList.toggle('bi-brightness-low-fill');
+    let mode = body.classList.toggle('dark');
+
+    //save mode
+    localStorage.setItem('darkmode', mode);
+  });
+
+</script>
+
+<div id="eJOY__extension_ai_adv_root" class="eJOY__extension_ai_adv_root_class">
+  <div class="wrapperAiAssEjoy">
+    <div class="containerSumEjoyIcon containerSumEjoyIconShow">
+      <div class="viewIconEjoy gl-tooltip-ejoy gl-tooltip-ejoy-left" tooltip-data="eJOY AI Assistant">
+        <div class="viewIconEjoyItem"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
+            fill="none">
+            <mask id="mask0_427_34" maskUnits="userSpaceOnUse" x="16" y="3" width="8" height="8"
+              style="mask-type: luminance;">
+              <path d="M24 3H16V11H24V3Z" fill="white"></path>
+            </mask>
+            <g mask="url(#mask0_427_34)">
+              <path
+                d="M23.8012 7.00309L21.0136 8.01539L20.0012 10.8031L18.9889 8.01539L16.2012 7.00309L18.9889 5.9908L20.0012 3.20309L21.0136 5.9908L23.8012 7.00309Z"
+                fill="url(#paint0_linear_427_34)"></path>
+            </g>
+            <mask id="mask1_427_34" maskUnits="userSpaceOnUse" x="0" y="10" width="6" height="6"
+              style="mask-type: luminance;">
+              <path d="M6 10H0V16H6V10Z" fill="white"></path>
+            </mask>
+            <g mask="url(#mask1_427_34)">
+              <path
+                d="M5.8494 13.0023L3.7587 13.7616L2.9994 15.8523L2.2402 13.7616L0.149399 13.0023L2.2402 12.2431L2.9994 10.1523L3.7587 12.2431L5.8494 13.0023Z"
+                fill="url(#paint1_linear_427_34)"></path>
+            </g>
+            <mask id="mask2_427_34" maskUnits="userSpaceOnUse" x="16" y="20" width="4" height="4"
+              style="mask-type: luminance;">
+              <path d="M20 20H16V24H20V20Z" fill="white"></path>
+            </mask>
+            <g mask="url(#mask2_427_34)">
+              <path
+                d="M19.8996 22.0016L18.5058 22.5077L17.9996 23.9016L17.4934 22.5077L16.0996 22.0016L17.4934 21.4954L17.9996 20.1016L18.5058 21.4954L19.8996 22.0016Z"
+                fill="url(#paint2_linear_427_34)"></path>
+            </g>
+            <g filter="url(#filter0_d_427_34)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.8671 20.3327C14.8098 20.2537 16.4674 18.0538 16.368 15.5257C15.9553 11.8147 11.5502 10.6201 13.3135 5.666C9.7712 8.7188 7.228 12.6272 7.3363 15.408C7.3847 18.1053 8.9455 20.3327 11.8671 20.3327ZM14.5512 16.5696C15.0045 16.5696 15.3306 16.2001 15.3719 15.7489C15.4799 15.431 15.3719 13.9738 14.2947 13.0395C14.4695 14.2529 13.6329 15.261 13.7305 15.7489C13.7305 16.2022 14.0979 16.5696 14.5512 16.5696Z"
+                fill="#1DA1F2"></path>
+            </g>
+            <defs>
+              <filter id="filter0_d_427_34" x="2.47583" y="0.80886" width="18.7535" height="24.381"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"></feColorMatrix>
+                <feOffset></feOffset>
+                <feGaussianBlur stdDeviation="2.42857"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"></feColorMatrix>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_427_34"></feBlend>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_427_34" result="shape"></feBlend>
+              </filter>
+              <linearGradient id="paint0_linear_427_34" x1="20.0012" y1="3.20309" x2="20.0012" y2="10.8031"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1DA1F2"></stop>
+                <stop offset="1" stop-color="#6CD2FF"></stop>
+              </linearGradient>
+              <linearGradient id="paint1_linear_427_34" x1="2.9994" y1="10.1523" x2="2.9994" y2="15.8523"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1DA1F2"></stop>
+                <stop offset="1" stop-color="#6CD2FF"></stop>
+              </linearGradient>
+              <linearGradient id="paint2_linear_427_34" x1="17.9996" y1="20.1016" x2="17.9996" y2="23.9016"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1DA1F2"></stop>
+                <stop offset="1" stop-color="#6CD2FF"></stop>
+              </linearGradient>
+            </defs>
+          </svg></div>
+        <div class="moveIconEjoyAi"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+            fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.45139 0.667969C4.64931 0.667969 4 1.31727 4 2.11936C4 2.92144 4.64931 3.57075 5.45139 3.57075C6.25347 3.57075 6.90278 2.92144 6.90278 2.11936C6.90278 1.31727 6.25347 0.667969 5.45139 0.667969ZM4 8.00868C4 7.2066 4.64931 6.55729 5.45139 6.55729C6.25347 6.55729 6.90278 7.2066 6.90278 8.00868C6.90278 8.81076 6.25347 9.46007 5.45139 9.46007C4.64931 9.46007 4 8.81076 4 8.00868ZM4 13.8837C4 13.0816 4.64931 12.4323 5.45139 12.4323C6.25347 12.4323 6.90278 13.0816 6.90278 13.8837C6.90278 14.6858 6.25347 15.3351 5.45139 15.3351C4.64931 15.3351 4 14.6858 4 13.8837Z"
+              fill="#666666"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.7854 0.667969C9.98329 0.667969 9.33398 1.31727 9.33398 2.11936C9.33398 2.92144 9.98329 3.57075 10.7854 3.57075C11.5875 3.57075 12.2368 2.92144 12.2368 2.11936C12.2368 1.31727 11.5875 0.667969 10.7854 0.667969ZM9.33398 8.00868C9.33398 7.2066 9.98329 6.55729 10.7854 6.55729C11.5875 6.55729 12.2368 7.2066 12.2368 8.00868C12.2368 8.81076 11.5875 9.46007 10.7854 9.46007C9.98329 9.46007 9.33398 8.81076 9.33398 8.00868ZM9.33398 13.8837C9.33398 13.0816 9.98329 12.4323 10.7854 12.4323C11.5875 12.4323 12.2368 13.0816 12.2368 13.8837C12.2368 14.6858 11.5875 15.3351 10.7854 15.3351C9.98329 15.3351 9.33398 14.6858 9.33398 13.8837Z"
+              fill="#666666"></path>
+          </svg></div>
+      </div>
+      <div class="viewCloseIconEjoy"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+          fill="none">
+          <circle cx="6" cy="6" r="6" fill="black" fill-opacity="0.25"></circle>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.71289 3.58672C8.87135 3.74518 8.87135 4.00209 8.71289 4.16054L6.72363 6.14981L8.71289 8.13907C8.87135 8.29752 8.87135 8.55444 8.71289 8.71289C8.55444 8.87135 8.29752 8.87135 8.13907 8.71289L6.14981 6.72363L4.16054 8.71289C4.00209 8.87135 3.74518 8.87135 3.58672 8.71289C3.42826 8.55443 3.42826 8.29752 3.58672 8.13907L5.57598 6.14981L3.58672 4.16054C3.42826 4.00209 3.42826 3.74518 3.58672 3.58672C3.74518 3.42826 4.00209 3.42826 4.16054 3.58672L6.14981 5.57598L8.13907 3.58672C8.29752 3.42826 8.55444 3.42826 8.71289 3.58672Z"
+            fill="white"></path>
+        </svg></div>
+    </div>
+    <div class="eJOY__container ">
+      <div class="btnReportClose"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+          fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M14.0291 2.63758C14.3812 2.98971 14.3812 3.56062 14.0291 3.91275L9.6085 8.33333L14.0291 12.7539C14.3812 13.106 14.3812 13.677 14.0291 14.0291C13.677 14.3812 13.106 14.3812 12.7539 14.0291L8.33333 9.6085L3.91275 14.0291C3.56062 14.3812 2.98971 14.3812 2.63758 14.0291C2.28546 13.677 2.28546 13.106 2.63758 12.7539L7.05817 8.33333L2.63758 3.91275C2.28546 3.56062 2.28546 2.98971 2.63758 2.63758C2.98971 2.28546 3.56062 2.28546 3.91275 2.63758L8.33333 7.05817L12.7539 2.63758C13.106 2.28546 13.677 2.28546 14.0291 2.63758Z"
+            fill="#B3B3B3"></path>
+        </svg></div>
+    </div>
+  </div>
+</div><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
